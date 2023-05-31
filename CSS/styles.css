@@ -1,3 +1,48 @@
-body{
-    background-color: gold;
+:root {
+  --color-main-text: #024c80;
+  --color-second-text: #fff;
+  --color-headings: #f95500;
+  --bg-color: #ecf2f8;
+  font-size: 62.5%;
 }
+
+/* Typograghy */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "IRANSansWeb(FaNum)";
+  font-size: 1.6rem;
+  line-height: 2.5;
+  direction: rtl;
+  font-weight: 400;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin: 0.7rem 0;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+p {
+  margin-top: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.link-dark {
+  color: var(--color-main-text);
+}
+.link-light {
+  color: var(--color-second-text);
+}
+/* TODO: hover effects */
