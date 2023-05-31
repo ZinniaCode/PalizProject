@@ -39,10 +39,33 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
 }
-.link-dark {
+.link--dark {
   color: var(--color-main-text);
 }
-.link-light {
+.link--light {
   color: var(--color-second-text);
 }
 /* TODO: hover effects */
+
+/* Buttons */
+.btn{
+    white-space: nowrap;
+}
+.btn--large{
+
+}
+
+/* List */
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+.list--inline .list__item {
+    display: inline-block;
+    margin-left: 3.8rem;
+    margin-bottom: 1.2rem;
+}
+.list--thin{
+font-weight: 400;
+}
