@@ -1,4 +1,5 @@
 :root {
+  --color-body-text: #666666;
   --color-main-text: #024c80;
   --color-second-text: #fff;
   --color-headings: #f95500;
@@ -162,4 +163,21 @@ a {
 .btn--large {
   width: 20%;
   /* display: inline-block; */
+}
+
+/* content */
+.content{
+  display: flex;
+}
+.content-row{
+  flex-direction: row;
+}
+.content-column{
+  flex-direction: column;
+}
+.content-body-title{
+color: var(--color-headings);
+}
+.content-body-text{
+color: var(--color-body-text);
 }
