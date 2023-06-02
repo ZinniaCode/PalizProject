@@ -24,6 +24,11 @@ body {
   line-height: 2.5;
   direction: rtl;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100vw;
 }
 h1,
 h2,
@@ -39,6 +44,29 @@ h3 {
 }
 p {
   margin-top: 0;
+}
+/* containers */
+.container {
+  margin: 0 auto;
+  width: calc(100% - 36px);
+  max-width: 732px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 272px);
+    max-width: 720px;
+  }
+  @media screen and (min-width: 992px) {
+    width: calc(100% - 64px);
+    max-width: 960px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: calc(100% - 170px);
+    max-width: 1200px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: calc(100% - 340px);
+    max-width: 1320px;
+  }
 }
 
 /* Links */
@@ -56,15 +84,25 @@ a {
 /* TODO: hover effects */
 
 /* List */
-
+nav ul {
+}
 .list {
   list-style: none;
-  padding-left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-right: auto; */
+  margin-left: 80px;
+  @media screen and (min-width: 992px) {
+    margin-left: 60px;
+  }
 }
+
 .list--inline .list__item {
   display: inline-block;
-  margin-left: 3.8rem;
-  margin-bottom: 1.2rem;
+  white-space: nowrap;
+  padding: 0 10px;
 }
 .list--thin {
   font-weight: 400;
@@ -112,14 +150,13 @@ a {
   border: 0;
   cursor: pointer;
   font-weight: 700;
-  margin: 30px;
   text-align: center;
   white-space: nowrap;
   outline: none;
 }
 
 .btn--primary {
-  padding: 10px 1.6rem;
+  padding: 10px 4.5rem;
   border-radius: 55px;
   font-size: 1.6rem;
   background: linear-gradient(270deg, #21409a 31.91%, #ce1878 100%);
@@ -166,18 +203,143 @@ a {
 }
 
 /* content */
-.content{
+.content {
   display: flex;
 }
-.content-row{
+.content-row {
   flex-direction: row;
 }
-.content-column{
+.content-column {
   flex-direction: column;
 }
-.content-body-title{
-color: var(--color-headings);
+.content-body-title {
+  color: var(--color-headings);
 }
-.content-body-text{
-color: var(--color-body-text);
+.content-body-text {
+  color: var(--color-body-text);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid--col-2 {
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grid--col-3 {
+  @media screen and (min-width: 998px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid--col-4 {
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ------------ */
+header {
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    height: 124px;
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  width: 280px;
+  display: inline-block;
+  /* vertical-align: middle; */
+  @media screen and (min-width: 1024px) {
+    width: 200px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 280px;
+  }
+}
+.brand img {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+nav .icon {
+  width: 40px;
+  height: 40px;
+  margin: 0.5rem;
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+nav .list--inline {
+  display: none;
+  @media screen and (min-width: 992px) {
+    display: flex;
+  }
+}
+nav .btn {
+  display: none;
+  @media screen and (min-width: 992px) {
+    display: inline-flex;
+  }
+}
+
+/* section-1 */
+.section-1 {
+  height: auto;
+  background-color: #024c80;
+  @media screen and (min-width: 768px) {
+    height: 625px;
+  }
+}
+.section-2 {
+  height: auto;
+  /* position: relative; */
+  background-color: pink;
+
+  @media screen and (min-width: 768px) {
+    height: 625px;
+  }
+}
+.section-3 {
+  height: auto;
+  /* position: relative; */
+  background-color: gold;
+
+  @media screen and (min-width: 768px) {
+    height: 625px;
+  }
+}
+/* section .bg{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+.section-1 .bg {
+  height: 765px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+.section-3 .bg {
+  height: 752px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+footer {
+  height: auto;
+  background-color: dodgerblue;
+  @media screen and (min-width: 768px) {
+    height: 208px;
+  }
 }
