@@ -20,7 +20,7 @@ html {
 }
 body {
   font-family: "IRANSansWeb(FaNum)";
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.5;
   direction: rtl;
   font-weight: 400;
@@ -29,6 +29,9 @@ body {
   align-items: center;
   height: auto;
   width: 100vw;
+  @media screen and (min-width: 992px) {
+    font-size: 1.6rem;
+  }
 }
 h1,
 h2,
@@ -37,9 +40,15 @@ h3 {
   margin: 0.7rem 0;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+  @media screen and (min-width: 992px) {
+    font-size: 3.2rem;
+  }
 }
 h3 {
+  @media screen and (min-width: 992px) {
+    font-size: 1.8rem;
+  }
   font-size: 2.2rem;
 }
 p {
@@ -48,9 +57,15 @@ p {
 /* containers */
 .container {
   margin: 0 auto;
-  width: calc(100% - 36px);
-  max-width: 732px;
+  width: calc(100% - 32px);
+  max-width: 500px;
+  background-color: rgb(184, 71, 90);
+  @media screen and (min-width: 576px) {
+    width: calc(100% - 40px);
+    max-width: 732px;
+  }
   @media screen and (min-width: 768px) {
+    background-color: pink;
     width: calc(100% - 100px);
     max-width: 890px;
   }
@@ -319,7 +334,7 @@ nav .btn {
 .section1 .content-body {
   margin-bottom: 70px;
   @media screen and (min-width: 992px) {
-    margin-left: 74px;
+    margin-left: 70px;
   }
 }
 .section1 .content-body-text {
@@ -327,18 +342,35 @@ nav .btn {
   word-spacing: nowrap;
 }
 
-.section1 .content-image {
-  margin-bottom: 50px;
+.section1 .content-meida {
+  /* width: 100%;
+@media screen and (min: width 992px;){
+  width: 50%;
+} */
 }
+.content-meida,
+.content-image ,
+.content-buttons ,
+.content-image img,
+.content-buttons button {
+  width: 100%;
+}
+
 .section1 .content-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width:576px) {
+    flex-wrap:nowrap;
+  }
 }
 .content-media button {
-  margin: 0 14px;
+  margin-bottom: 12px;
+  @media screen and (min-width:576px) {
+      margin: 0 14px;
+  }
 }
-
 
 /* footer {
   height: auto;
