@@ -57,7 +57,7 @@ p {
 /* containers */
 .container {
   margin: 0 auto;
-  width: calc(100% - 32px);
+  width: calc(100vw - 32px);
   max-width: 500px;
   @media screen and (min-width: 576px) {
     width: calc(100% - 40px);
@@ -78,7 +78,8 @@ p {
   }
   @media screen and (min-width: 1400px) {
     width: calc(100% - 340px);
-    max-width: 1320px;
+    /* max-width: 1320px;
+    min-width: 1100px; */
   }
 }
 
@@ -311,7 +312,12 @@ nav .btn {
   color: var(--color-body-text);
 }
 */
+/* ------ */ 
+section{
+  width: 100%;
+  padding: 2rem 2rem;
 
+}
 /* section1 */
 .section1 {
   width: 100%;
@@ -334,13 +340,14 @@ nav .btn {
  
 }
 
-.section1 .content-body {
+.content-body {
   margin-bottom: 70px;
   @media screen and (min-width: 992px) {
     margin-left: 70px;
+    margin-bottom: 68px;
   }
 }
-.section1 .content-body-text {
+.content-body-text {
   text-align: justify;
   word-spacing: nowrap;
 }
@@ -359,11 +366,12 @@ nav .btn {
   width: 100%;
 }
 
-.section1 .content-buttons {
+.content-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 58px;
   @media screen and (min-width:576px) {
     flex-wrap:nowrap;
   }
@@ -371,10 +379,47 @@ nav .btn {
 .content-media button {
   margin-bottom: 12px;
   @media screen and (min-width:576px) {
-      margin: 0 14px;
+      margin-bottom: 24px;
+      margin-left: 24px;
   }
 }
 
+
+/* section2 */
+.section2{
+  width: 100%;
+  padding: 2rem 2rem;
+
+}
+.section2 .content-buttons{
+  display: flex;
+  flex-wrap: wrap;
+}
+.section2-button > button{
+  flex-shrink: 0;
+  flex-basis:100%;
+  flex-grow: 1;
+  @media screen and (min-width:576px){
+    flex-grow: 1;
+    flex-basis: 45%;
+  }
+  @media screen and (min-width:768px){
+    flex-grow: 1;
+    flex-basis: 32%;
+  }
+  @media screen and (min-width:992px){
+    flex-grow: 0;
+    flex-basis: 22%;
+  }
+  @media screen and (min-width:1200px){
+    flex-grow: 0;
+    flex-basis: 20%;
+  }
+  @media screen and (min-width:1400px){
+    flex-grow: 0;
+    flex-basis: 258px;
+  }
+}
 /* footer {
   height: auto;
   background-color: dodgerblue;
