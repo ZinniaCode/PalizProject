@@ -132,11 +132,6 @@ nav ul {
 .list {
   list-style: none;
   width: 100%;
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
-  /* margin-right: auto; */
-  margin-left: 80px;
 }
 @media screen and (min-width: 992px) {
   .list {
@@ -145,8 +140,9 @@ nav ul {
 }
 .list.list--inline {
   /* display: flex; */
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  width: 542px;
 }
 .list.list--column {
   display: flex;
@@ -157,7 +153,6 @@ nav ul {
 .list--inline .list__item {
   display: inline-block;
   white-space: wrap;
-  padding: 0 10px;
   transition: transform 0.2s ease;
 }
 .list--thin {
@@ -167,6 +162,7 @@ nav ul {
   transform: scale(1.1, 1.1);
 }
 /* Icons */
+
 .icon {
   width: 20px;
   height: 20px;
@@ -265,7 +261,9 @@ nav ul {
   padding: 5px 1rem;
   text-align: right;
 }
-
+.btn--outline.btn--large {
+  margin-bottom: 28px;
+}
 .btn--outline:hover {
   background: var(--color-main-text);
   color: var(--bg-color);
@@ -273,6 +271,7 @@ nav ul {
 
 .btn--large {
   width: 20%;
+  /* margin-bottom: 30px; */
   /* display: inline-block; */
 }
 
@@ -309,28 +308,29 @@ nav ul {
 }
 
 /* ---------body---------- */
-body::after {
-  content: " ";
-  display: block;
+.bg-img {
   position: absolute;
-  top: 427px;
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  height: 765px;
   z-index: -1;
-  background: url(../Photos/Shape\ 591\ 1.png) no-repeat;
+  top: 427px;
+  width: 100%;
+  /* position: relative; */
+  background-image: url(../Photos/Shape591.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ---------Header--------- */
 header {
-  height: 122px;
+  /* height: 122px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 4.4rem 0;
 }
 @media screen and (min-width: 768px) {
   header {
-    height: 124px;
+    /* height: 124px; */
   }
 }
 nav {
@@ -342,18 +342,18 @@ nav {
 .brand {
   display: none;
 }
-@media screen and (min-width: 300px) {
+@media (min-width: 300px) {
   .brand {
     width: 200px;
     display: inline-block;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .brand {
     width: 200px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media (min-width: 1400px) {
   .brand {
     width: 280px;
   }
@@ -362,33 +362,68 @@ nav {
 .brand img {
   max-width: 100%;
 }
+nav .icon img {
+  width: 40px;
+  height: 40px;
+}
 nav .icon {
   width: 40px;
   height: 40px;
-  align-content: flex-end;
+  transform: translateY(50%);
+  display: inline-flex;
 }
-@media screen and (min-width: 300px) {
-  nav .icon {
-    margin: 0.5rem;
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 5rem;
+  padding: 4px;
+  cursor: pointer;
+}
+.closeIcon {
+  display: none;
+}
+.menu {
+  display: none;
+  transition: transform 0.2s;
+  z-index: 90;
+}
+@media (min-width: 992px) {
+  .menu {
+    display: flex;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   nav .icon {
     display: none;
   }
 }
-nav .list--inline {
-  display: none;
+.list.list--inline.showMenu {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
-@media screen and (min-width: 992px) {
-  nav .list--inline {
-    display: flex;
+@media (min-width: 992px) {
+  .list.list--inline.showMenu {
+    display: none;
   }
 }
+.list.list--inline.showMenu .list__item {
+  margin-bottom: 30px;
+}
+
 nav .btn {
   display: none;
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   nav .btn {
     display: inline-flex;
   }
@@ -450,7 +485,7 @@ section {
   margin-bottom: 4rem;
   text-align: justify;
   white-space: wrap;
-  word-break:keep-all;
+  word-break: keep-all;
   color: var(--color-body-text);
   /* flex: 1 0 544px; */
 }
@@ -570,7 +605,7 @@ section {
   width: 100%;
   padding: 3rem 2rem;
   position: relative;
-  background-image: url(../Photos/Shape\ 595\ 1.png);
+  background-image: url(../Photos/Shape595.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
