@@ -1,3 +1,8 @@
+
+@font-face {
+  font-family : "IRANSansWeb(FaNum)";
+  src : url(../fonts/IRANSansWeb-FaNum.ttf);
+  }
 :root {
   --color-body-text: #666666;
   --color-main-text: #024c80;
@@ -18,7 +23,7 @@
 
 body {
   position: relative;
-  font-family: "IRANSansWeb(FaNum)";
+  font-family: "IRANSansWeb-FaNum";
   font-size: 1.4rem;
   line-height: 2.5;
   direction: rtl;
@@ -28,9 +33,11 @@ body {
   align-items: center;
   height: auto;
   width: 100vw;
+
   @media screen and (min-width: 992px) {
     font-size: 1.6rem;
   }
+  
 }
 
 h1,
@@ -61,7 +68,7 @@ p {
 /* containers */
 .container {
   margin: 0 auto;
-  width: calc(100%- 32px);
+  width: calc(100% - 32px);
   max-width: 500px;
   @media screen and (min-width: 576px) {
     width: calc(100% - 40px);
@@ -166,6 +173,10 @@ nav ul {
 .icon--btn-size {
   width: 25px;
   height: 25px;
+}
+.btn-img{
+  height: 25px !important;
+  width: 25px !important;
 }
 .icon--footer {
   background-color: var(--color-second-text);
@@ -400,7 +411,7 @@ section {
   flex: 0 0 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   align-self: stretch;
 }
@@ -439,7 +450,7 @@ section {
   margin-bottom: 12px;
   margin-left: 24px;
   @media screen and (min-width: 576px) {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     margin-left: 24px;
   }
 }
@@ -517,7 +528,7 @@ h3.content-body-text {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../Photos/pic\ end-tem-1\ 1.png);
+  background-image: url(../Photos/pic-end.png);
   @media (min-width: 567px) {
     width: 363px;
     height: 438px;

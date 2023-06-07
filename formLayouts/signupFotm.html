@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//db.onlinewebfonts.com/c/5c53f1a72f61b5b51e2ea79a22ebc38b?family=IRANSansWeb(FaNum)" rel="stylesheet"
+        type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/bc44a2635942ecc276e48e7215fc678a?family=IRANSansWeb(FaNum)" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>صفحه ثبت نام</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 90%;
+
+            @media (min-width: 1200px) {
+                width: 100%;
+                height: 650px;
+                flex-direction: row;
+            }
+            /* @media (min-width: 1440px) {
+                width: 80%;
+                height: 650px;
+                flex-direction: row;
+                border-radius:10px;
+                overflow: hidden;
+            } */
+
+        }
+
+        .card>div {
+            flex: 0 0 50%;
+            height: 100%;
+        }
+
+        .card-content {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content .header {
+            padding: 24px 170px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 650px;
+            background-image: url(../Photos/Form/photo.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .card-image img {}
+
+        /* .card-image img{
+           object-fit: fill;
+            width: 100%;
+        } */
+
+        .form-container {
+            align-self: flex-end;
+
+            width: 80%;
+            height: calc(100% - 81px);
+            text-align: center;
+        }
+    </style>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="header">
+                <span style="height: 25px;"><img src="../Photos/Form/homeIcon.svg" alt=""></span>
+                <span style="height: 25px; font-size: 16px;">خانه</span>
+            </div>
+            <div class="form-container">
+                <img src="../Photos/logo.png" alt="">
+                <form action="">
+                    1
+                </form>
+            </div>
+        </div>
+        <div class="card-image">
+        </div>
+    </div>
+</body>
+
+</html>
