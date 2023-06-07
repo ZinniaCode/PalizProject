@@ -5,34 +5,46 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="//db.onlinewebfonts.com/c/5c53f1a72f61b5b51e2ea79a22ebc38b?family=IRANSansWeb(FaNum)" rel="stylesheet"
-    type="text/css" />
-  <link href="//db.onlinewebfonts.com/c/bc44a2635942ecc276e48e7215fc678a?family=IRANSansWeb(FaNum)" rel="stylesheet"
-    type="text/css" />
   <link rel="stylesheet" href="CSS/normalize.css" />
   <link rel="stylesheet" href="CSS/styles.css" />
   <title>صفحه اصلی</title>
 </head>
 
 <body>
+  <div class="bg-img"></div>
   <header class="container">
     <nav class="nav">
       <a href="/"><img class="brand" src="./Photos/logo.png" alt="logo" /></a>
-      <svg class="icon">
-        <use href="Photos/sprite.svg#menu-hamburger"></use>
-      </svg>
-      <ul class="list list--inline">
-        <li class="list__item"><a class="link--dark" href="#">سایت بانک</a></li>
-        <li class="list__item"><a class="link--dark" href="#">درباره ما</a></li>
-        <li class="list__item"><a class="link--dark" href="#">شرایط استخدامی</a></li>
-        <li class="list__item"><a class="link--dark" href="#">قوانین و مقررات</a></li>
-        <li class="list__item"><a class="link--dark" href="#">ارتباط با ما</a></li>
+      <!-- <svg class="icon">
+        <use xlink:href="Photos/sprite.svg#menu-hamburger"></use>
+      </svg> -->
+      <span class="icon hamburger">
+        <img class="menuIcon" src="Photos/menu-hamburger.svg" alt="menu">
+        <img class="closeIcon" src="Photos/close.svg" alt="menu">
+      </span>
+      <ul class="list list--inline menu">
+        <li class="list__item">
+          <a class="link--dark menuItem" href="#">سایت بانک</a>
+        </li>
+        <li class="list__item">
+          <a class="link--dark menuItem" href="#">درباره ما</a>
+        </li>
+        <li class="list__item">
+          <a class="link--dark menuItem" href="#">شرایط استخدامی</a>
+        </li>
+        <li class="list__item">
+          <a class="link--dark menuItem" href="#">قوانین و مقررات</a>
+        </li>
+        <li class="list__item">
+          <a class="link--dark menuItem" href="#">ارتباط با ما</a>
+        </li>
       </ul>
-      <button class="btn btn--primary btn--with-icon ">
+      <button class="btn btn--primary btn--with-icon">
         <span class="icon-container icon--btn">
-          <svg class="icon--btn-size">
-            <use href="Photos/sprite.svg#user"></use>
-          </svg>
+          <!-- <svg class="icon--btn-size">
+            <use xlink:href="Photos/sprite.svg#user"></use>
+          </svg> -->
+          <span class="icon--btn-size"><img class="btn-img" src="Photos/user.svg" alt="user" /></span>
         </span>
         <span>ورود</span>
       </button>
@@ -69,7 +81,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <section class="section2">
     <div class="container">
@@ -94,65 +105,73 @@
           <div class="content-buttons section2-button">
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب سراسری</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب بانکداری</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب حراست</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب فناوری</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب سراسری</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب بانکداری</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب حراست</span>
             </button>
             <button class="btn btn--outline btn--large btn--with-icon">
               <span class="icon-container icon--btn-large">
-                <svg class="icon--btn-size">
-                  <use href="Photos/sprite.svg#user-plus"></use>
-                </svg>
+                <!-- <svg class="icon--btn-size">
+                    <use xlink:href="Photos/sprite.svg#user-plus"></use>
+                  </svg> -->
+                <span class="icon--btn-siz"><img src="Photos/user-plus.svg" alt="user" /></span>
               </span>
               <span>جذب فناوری</span>
             </button>
@@ -168,7 +187,8 @@
         <div class="content-body">
           <h2 class="content-body-title">فرم‌های استخدامی شما</h2>
           <h3 class="content-body-text">
-            اگر تا الان برای ما فرم های استخدامی ارسال کردی، میتونی هم ویرایش کنی و هم پیگیری
+            اگر تا الان برای ما فرم های استخدامی ارسال کردی، میتونی هم ویرایش
+            کنی و هم پیگیری
           </h3>
         </div>
         <div class="content-media">
@@ -178,8 +198,8 @@
           </div>
           <div class="content-image">
             <!-- <img src="Photos/pic end-tem-1 1.png" alt="pic" /> -->
-            <img src="Photos/TooltipV1.svg" alt="Tooltip">
-            <img src="Photos/TooltipV2.svg" alt="Tooltip">
+            <img src="Photos/TooltipV1.svg" alt="Tooltip" />
+            <img src="Photos/TooltipV2.svg" alt="Tooltip" />
           </div>
         </div>
       </div>
@@ -194,20 +214,32 @@
           </div>
           <div class="footer-col">
             <ul class="list list--column">
-              <li class="list__item"><a class="link--light" href="#">صفحه اصلی بانک</a></li>
-              <li class="list__item"><a class="link--light" href="#">بانکداری الکترونیک</a></li>
+              <li class="list__item">
+                <a class="link--light" href="#">صفحه اصلی بانک</a>
+              </li>
+              <li class="list__item">
+                <a class="link--light" href="#">بانکداری الکترونیک</a>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
             <ul class="list list--column">
-              <li class="list__item"><a class="link--light" href="#">درباره ما</a></li>
-              <li class="list__item"><a class="link--light" href="#">ورود به حساب کاربری</a></li>
+              <li class="list__item">
+                <a class="link--light" href="#">درباره ما</a>
+              </li>
+              <li class="list__item">
+                <a class="link--light" href="#">ورود به حساب کاربری</a>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
             <ul class="list list--column">
-              <li class="list__item"><a class="link--light" href="#">ارتباط با ما</a></li>
-              <li class="list__item"><a class="link--light" href="#">اسامی پذیرفتگان استخدامی</a></li>
+              <li class="list__item">
+                <a class="link--light" href="#">ارتباط با ما</a>
+              </li>
+              <li class="list__item">
+                <a class="link--light" href="#">اسامی پذیرفتگان استخدامی</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -218,30 +250,31 @@
       <div class="container">
         <div class="row">
           <div class="footer-col copyright">
-            <img src="Photos/small-logo.png" alt="">
+            <img src="Photos/small-logo.png" alt="" />
             <h4>تمامی حقوق این سایت متعلق به بانک رفاه می باشد.</h4>
           </div>
           <div class="footer-col social">
             <a class="icon-container icon--footer">
-              <img class="icon--footer-size" src="./Photos/youtube.png" alt="">
+              <img class="icon--footer-size" src="./Photos/youtube.png" alt="" />
             </a>
             <a class="icon-container icon--footer">
-              <img class="icon--footer-size" src="./Photos/linkedin.png" alt="">
+              <img class="icon--footer-size" src="./Photos/linkedin.png" alt="" />
             </a>
             <a class="icon-container icon--footer">
-              <img class="icon--footer-size" src="./Photos/aparat.png" alt="">
+              <img class="icon--footer-size" src="./Photos/aparat.png" alt="" />
             </a>
             <a class="icon-container icon--footer">
-              <img class="icon--footer-size" src="./Photos/outlook.png" alt="">
+              <img class="icon--footer-size" src="./Photos/outlook.png" alt="" />
             </a>
             <a class="icon-container icon--footer">
-              <img class="icon--footer-size" src="./Photos/insta.png" alt="">
+              <img class="icon--footer-size" src="./Photos/insta.png" alt="" />
             </a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <script src="JS/index.js"></script>
 </body>
 
 </html>
