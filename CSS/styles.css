@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "IRANSansWeb(FaNum)";
+  font-family: "IRANSansWebFaNum";
   src: url(../fonts/IRANSansWeb-FaNum.ttf);
 }
 :root {
@@ -22,7 +22,7 @@
 
 body {
   position: relative;
-  font-family: "IRANSansWeb-FaNum";
+  font-family: "IRANSansWebFaNum";
   font-size: 1.4rem;
   line-height: 2.5;
   direction: rtl;
@@ -156,7 +156,7 @@ nav ul {
 }
 .list--inline .list__item {
   display: inline-block;
-  white-space: nowrap;
+  white-space: wrap;
   padding: 0 10px;
   transition: transform 0.2s ease;
 }
@@ -449,7 +449,8 @@ section {
 .content-body-text {
   margin-bottom: 4rem;
   text-align: justify;
-  white-space: nowrap;
+  white-space: wrap;
+  word-break:keep-all;
   color: var(--color-body-text);
   /* flex: 1 0 544px; */
 }
